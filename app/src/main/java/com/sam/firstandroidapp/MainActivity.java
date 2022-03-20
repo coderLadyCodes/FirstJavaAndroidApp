@@ -15,6 +15,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void disable(View v) {
         v.setEnabled(false);
-        System.out.println("hello");
+
     }
 }
