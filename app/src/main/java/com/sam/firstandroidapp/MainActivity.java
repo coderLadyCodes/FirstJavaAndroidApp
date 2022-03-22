@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         String input = text.getText().toString();
         ((TextView)findViewById(R.id.output)).setText(input);
         Toast.makeText(this, input + " est enregistré", Toast.LENGTH_LONG).show();
-*/
-    //}
+
+    //}*/
 
 
             public void launchSettings(View v){
