@@ -11,10 +11,13 @@
         android:theme="@style/Theme.FirstAndroidApp">
         <activity
             android:name=".SettingsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Settings"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="Samia">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("Home");
     }
 
     /*
@@ -35,5 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
             public void launchSettings(View v){
                 Intent intent = new Intent(this, SettingsActivity.class);
+                String message = ((EditText)findViewById(R.id.editText)).getText().toString();
+                intent.putExtra("COOL", message);
+                startActivity(intent);
         }
 }
